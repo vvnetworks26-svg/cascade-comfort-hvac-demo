@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cascade Comfort HVAC | Heating &amp; Cooling Experts</title>
+<meta name="description" content="Cascade Comfort HVAC — trusted AC repair, furnace installation, maintenance plans, and 24/7 emergency HVAC service." />
+<style>
+  :root {
+    --navy: #0f2d3f;
+    --navy-light: #163f57;
+    --blue: #2b7fd1;
+    --blue-dark: #1e63a8;
+    --orange: #f0813a;
+    --orange-dark: #d96a26;
+    --ink: #1c2b33;
+    --muted: #5b6b74;
+    --bg: #f6f8f9;
+    --white: #ffffff;
+    --border: #e2e8ec;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--ink); line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  section { padding: 72px 0; }
+  h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; color: var(--navy); }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; font-weight: 700; color: var(--orange); }
+
+  /* ---- Top bar ---- */
+  .topbar { background: var(--navy); color: #cfe0ea; font-size: 13px; }
+  .topbar .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 8px; padding-bottom: 8px; gap: 12px; flex-wrap: wrap; }
+  .topbar a.tel { color: #fff; font-weight: 700; text-decoration: none; }
+  .topbar .badge { background: var(--orange); color: #fff; font-weight: 700; padding: 2px 10px; border-radius: 999px; font-size: 11px; letter-spacing: 0.04em; }
+
+  /* ---- Nav ---- */
+  header.nav { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 40; }
+  header.nav .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 19px; color: var(--navy); text-decoration: none; }
+  .brand-mark { width: 34px; height: 34px; border-radius: 9px; background: linear-gradient(135deg, var(--blue), var(--navy)); display: flex; align-items: center; justify-content: center; color: #fff; flex-shrink: 0; }
+  .nav-links { display: flex; gap: 28px; font-size: 14px; font-weight: 600; color: var(--navy-light); list-style: none; }
+  .nav-links a { text-decoration: none; }
+  .nav-links a:hover { color: var(--blue); }
+  .nav-cta { background: var(--orange); color: #fff; font-weight: 700; font-size: 14px; padding: 10px 18px; border-radius: 8px; text-decoration: none; white-space: nowrap; box-shadow: 0 4px 14px rgba(240,129,58,0.35); }
+  .nav-cta:hover { background: var(--orange-dark); }
+  @media (max-width: 760px) { .nav-links { display: none; } }
+
+  /* ---- Hero ---- */
+  .hero { background: radial-gradient(1100px 500px at 15% -10%, #1c4f6d 0%, var(--navy) 55%, #0b1e29 100%); color: #fff; padding: 84px 0 96px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; }
+  .hero h1 { font-size: 44px; line-height: 1.08; color: #fff; margin: 14px 0 18px; }
+  .hero p.lead { font-size: 17px; color: #c7dbe6; max-width: 480px; margin-bottom: 30px; }
+  .hero .eyebrow { color: #7fc4f5; }
+  .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-primary { background: var(--orange); color: #fff; font-weight: 700; font-size: 15px; padding: 14px 24px; border-radius: 9px; text-decoration: none; box-shadow: 0 8px 22px rgba(240,129,58,0.4); }
+  .btn-primary:hover { background: var(--orange-dark); }
+  .btn-ghost { border: 1.5px solid rgba(255,255,255,0.35); color: #fff; font-weight: 700; font-size: 15px; padding: 13px 22px; border-radius: 9px; text-decoration: none; }
+  .btn-ghost:hover { background: rgba(255,255,255,0.08); }
+  .hero-stats { display: flex; gap: 28px; margin-top: 40px; flex-wrap: wrap; }
+  .hero-stats div strong { display: block; font-size: 26px; color: #fff; }
+  .hero-stats div span { font-size: 12.5px; color: #9fbdcd; text-transform: uppercase; letter-spacing: 0.06em; }
+  .hero-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: 18px; padding: 30px; backdrop-filter: blur(6px); }
+  .hero-card ul { list-style: none; display: grid; gap: 16px; }
+  .hero-card li { display: flex; gap: 12px; align-items: flex-start; color: #e6f0f6; font-size: 14.5px; }
+  .hero-card .ic { width: 30px; height: 30px; border-radius: 8px; background: rgba(43,127,209,0.25); color: #7fc4f5; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 15px; }
+  @media (max-width: 900px) {
+    .hero .wrap { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 34px; }
+  }
+
+  /* ---- Trust strip ---- */
+  .trust { background: var(--white); border-bottom: 1px solid var(--border); }
+  .trust .wrap { display: flex; justify-content: space-between; padding: 20px 24px; gap: 20px; flex-wrap: wrap; font-size: 13px; color: var(--muted); font-weight: 600; }
+  .trust span.dot::before { content: "●"; color: var(--orange); margin-right: 8px; font-size: 8px; vertical-align: middle; }
+
+  /* ---- Services ---- */
+  .services .head { text-align: center; max-width: 620px; margin: 0 auto 44px; }
+  .services h2 { font-size: 32px; margin-top: 10px; }
+  .services p { color: var(--muted); margin-top: 12px; font-size: 15.5px; }
+  .service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .service-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 26px 22px; transition: transform .15s, box-shadow .15s; }
+  .service-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(15,45,63,0.08); }
+  .service-card .ic { width: 46px; height: 46px; border-radius: 11px; background: #eaf3fb; color: var(--blue); display: flex; align-items: center; justify-content: center; font-size: 21px; margin-bottom: 16px; }
+  .service-card.emergency .ic { background: #fdece3; color: var(--orange); }
+  .service-card h3 { font-size: 17px; margin-bottom: 8px; }
+  .service-card p { font-size: 13.8px; color: var(--muted); }
+  .service-card .tag { display: inline-block; margin-top: 14px; font-size: 11.5px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.05em; }
+  @media (max-width: 920px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .service-grid { grid-template-columns: 1fr; } }
+
+  /* ---- Why us / band ---- */
+  .band { background: var(--navy); color: #fff; }
+  .band .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; padding: 48px 24px; }
+  .band strong { display: block; font-size: 30px; color: #fff; }
+  .band span { font-size: 13px; color: #9fbdcd; }
+  @media (max-width: 760px) { .band .wrap { grid-template-columns: repeat(2, 1fr); } }
+
+  /* ---- Testimonials ---- */
+  .testimonials .head { text-align: center; max-width: 560px; margin: 0 auto 40px; }
+  .t-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .t-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 26px; }
+  .t-card .stars { color: var(--orange); font-size: 14px; margin-bottom: 12px; letter-spacing: 2px; }
+  .t-card p.quote { font-size: 14.5px; color: var(--ink); margin-bottom: 18px; }
+  .t-person { display: flex; align-items: center; gap: 12px; }
+  .t-avatar { width: 38px; height: 38px; border-radius: 999px; background: var(--blue); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+  .t-name { font-size: 13.5px; font-weight: 700; color: var(--navy); }
+  .t-loc { font-size: 12px; color: var(--muted); }
+  @media (max-width: 900px) { .t-grid { grid-template-columns: 1fr; } }
+
+  /* ---- Contact ---- */
+  .contact { background: var(--white); border-top: 1px solid var(--border); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  .contact h2 { font-size: 30px; }
+  .contact p.lead { color: var(--muted); margin: 14px 0 26px; font-size: 15px; max-width: 440px; }
+  .contact-list { display: grid; gap: 18px; }
+  .contact-list li { display: flex; gap: 14px; align-items: flex-start; list-style: none; }
+  .contact-list .ic { width: 38px; height: 38px; border-radius: 10px; background: #eaf3fb; color: var(--blue); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .contact-list strong { display: block; font-size: 14px; color: var(--navy); }
+  .contact-list span { font-size: 13.5px; color: var(--muted); }
+  .contact-form { background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
+  .contact-form h3 { font-size: 17px; margin-bottom: 4px; }
+  .contact-form p.sub { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+  .form-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+  .form-field label { font-size: 12px; font-weight: 700; color: var(--navy-light); text-transform: uppercase; letter-spacing: 0.04em; }
+  .form-field input, .form-field select, .form-field textarea {
+    border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-size: 14px; font-family: inherit; background: #fff; color: var(--ink);
+  }
+  .form-field textarea { resize: vertical; min-height: 72px; }
+  .form-note { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .btn-submit { width: 100%; margin-top: 6px; background: var(--blue); color: #fff; font-weight: 700; font-size: 15px; padding: 13px; border-radius: 9px; border: none; cursor: pointer; }
+  .btn-submit:hover { background: var(--blue-dark); }
+  @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } }
+
+  /* ---- Footer ---- */
+  footer { background: #0b1e29; color: #90a8b5; padding: 44px 0 28px; font-size: 13.5px; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 32px; }
+  .footer-grid h4 { color: #fff; font-size: 13px; margin-bottom: 14px; letter-spacing: 0.03em; }
+  .footer-grid ul { list-style: none; display: grid; gap: 9px; }
+  .footer-grid a { text-decoration: none; color: #90a8b5; }
+  .footer-grid a:hover { color: #fff; }
+  .footer-brand { display: flex; align-items: center; gap: 10px; font-weight: 800; color: #fff; font-size: 17px; margin-bottom: 12px; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 12.5px; }
+  @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+
+  /* ---- Widget iframe host ---- */
+  #lf-widget-frame {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: min(430px, calc(100vw - 20px));
+    height: min(660px, 92vh);
+    border: none;
+    background: transparent;
+    z-index: 999999;
+    color-scheme: light;
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <div><span class="badge">24/7 EMERGENCY SERVICE</span> &nbsp; Serving the Charlotte Metro Area since 2009</div>
+      <a class="tel" href="tel:+17045550142">📞 (704) 555-0142</a>
+    </div>
+  </div>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="#top">
+        <span class="brand-mark">❄️</span>
+        Cascade Comfort HVAC
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="nav-cta" href="tel:+17045550142">Call Now</a>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Heating &amp; Cooling, Done Right</div>
+        <h1>Comfort you can count on, every season.</h1>
+        <p class="lead">Cascade Comfort HVAC keeps Charlotte-area homes and businesses warm in winter, cool in summer, and running efficiently all year — with licensed technicians who show up on time and fix it right the first time.</p>
+        <div class="hero-cta-row">
+          <a class="btn-primary" href="tel:+17045550142">Call (704) 555-0142</a>
+          <a class="btn-ghost" href="#contact">Request a Free Quote</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>15+ yrs</strong><span>In Business</span></div>
+          <div><strong>12,400+</strong><span>Jobs Completed</span></div>
+          <div><strong>4.9★</strong><span>Average Rating</span></div>
+          <div><strong>&lt;60 min</strong><span>Emergency Response</span></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <ul>
+          <li><span class="ic">✓</span> Licensed, bonded &amp; insured technicians</li>
+          <li><span class="ic">✓</span> Upfront, flat-rate pricing — no surprises</li>
+          <li><span class="ic">✓</span> Same-day appointments available</li>
+          <li><span class="ic">✓</span> 100% satisfaction guarantee on every job</li>
+          <li><span class="ic">✓</span> Financing available on new system installs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap">
+      <span class="dot">Google Guaranteed</span>
+      <span class="dot">BBB A+ Accredited</span>
+      <span class="dot">NATE-Certified Technicians</span>
+      <span class="dot">EPA 608 Certified</span>
+      <span class="dot">Locally Owned &amp; Operated</span>
+    </div>
+  </div>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow" style="text-align:center;">What We Do</div>
+        <h2>Full-service HVAC, from repair to replacement</h2>
+        <p>Whatever's wrong with your system — or whatever you're planning next — our team handles it.</p>
+      </div>
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="ic">🔧</div>
+          <h3>AC Repair</h3>
+          <p>Fast, accurate diagnostics and repair for every major brand — from a warm house to a system that won't turn on.</p>
+          <span class="tag">Most Requested</span>
+        </div>
+        <div class="service-card">
+          <div class="ic">🔥</div>
+          <h3>Furnace Installation</h3>
+          <p>High-efficiency furnace installs sized correctly for your home, with financing options and a full workmanship warranty.</p>
+        </div>
+        <div class="service-card">
+          <div class="ic">🛠️</div>
+          <h3>Maintenance Plans</h3>
+          <p>Seasonal tune-ups that catch small issues before they become expensive breakdowns — and keep your warranty valid.</p>
+        </div>
+        <div class="service-card emergency">
+          <div class="ic">🚨</div>
+          <h3>Emergency Service</h3>
+          <p>No heat at 2am? No AC in a heatwave? Our on-call technicians answer 24/7, 365 days a year.</p>
+          <span class="tag">Available 24/7</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" id="why">
+    <div class="wrap">
+      <div><strong>98%</strong><span>First-Visit Fix Rate</span></div>
+      <div><strong>60 min</strong><span>Avg. Emergency Response</span></div>
+      <div><strong>10-yr</strong><span>Parts &amp; Labor Warranty</span></div>
+      <div><strong>0%</strong><span>APR Financing Available</span></div>
+    </div>
+  </div>
+
+  <section class="testimonials" id="reviews">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow" style="text-align:center;">Customer Stories</div>
+        <h2>What Charlotte-area homeowners say</h2>
+      </div>
+      <div class="t-grid">
+        <div class="t-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Our AC died on the hottest day of July and Cascade had someone out within the hour. Fixed on the spot, fair price, no upsell games. Can't recommend enough."</p>
+          <div class="t-person">
+            <div class="t-avatar">MJ</div>
+            <div><div class="t-name">Maria Jennings</div><div class="t-loc">Matthews, NC</div></div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"We replaced a 20-year-old furnace with them last winter. The crew was clean, on time, and walked us through every option without any pressure. Bill was exactly the quote."</p>
+          <div class="t-person">
+            <div class="t-avatar">DR</div>
+            <div><div class="t-name">David Reyes</div><div class="t-loc">Huntersville, NC</div></div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Been on their maintenance plan for three years now. Zero surprises, and they always catch small stuff before it turns into a real problem. Worth every penny."</p>
+          <div class="t-person">
+            <div class="t-avatar">SK</div>
+            <div><div class="t-name">Sarah Kim</div><div class="t-loc">Charlotte, NC</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <div class="eyebrow">Get In Touch</div>
+          <h2>Talk to a real technician today</h2>
+          <p class="lead">Have a question, need a quote, or want to schedule service? Reach out any way that's easiest for you — or use the chat assistant in the corner for an instant answer.</p>
+          <ul class="contact-list">
+            <li><span class="ic">📞</span><div><strong>Call or Text</strong><span>(704) 555-0142 — answered 24/7</span></div></li>
+            <li><span class="ic">✉️</span><div><strong>Email</strong><span>service@cascadecomforthvac.com</span></div></li>
+            <li><span class="ic">📍</span><div><strong>Service Area</strong><span>Charlotte, Matthews, Huntersville &amp; surrounding areas</span></div></li>
+            <li><span class="ic">🕒</span><div><strong>Hours</strong><span>Mon–Sat 7am–7pm · Emergency line open 24/7</span></div></li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h3>Request a Free Quote</h3>
+          <p class="sub">Tell us what's going on — we'll follow up within one business hour.</p>
+          <form onsubmit="event.preventDefault(); this.reset(); alert('Thanks! This is a demo form — no request was actually sent.');">
+            <div class="form-row">
+              <div class="form-field"><label for="f-name">Name</label><input id="f-name" type="text" placeholder="Jamie Rivera" required></div>
+              <div class="form-field"><label for="f-phone">Phone</label><input id="f-phone" type="tel" placeholder="(704) 555-0100" required></div>
+            </div>
+            <div class="form-field"><label for="f-need">What do you need?</label>
+              <select id="f-need">
+                <option>AC Repair</option>
+                <option>Furnace Installation</option>
+                <option>Maintenance Plan</option>
+                <option>Emergency Service</option>
+                <option>Something Else</option>
+              </select>
+            </div>
+            <div class="form-field"><label for="f-notes">Details</label><textarea id="f-notes" placeholder="Tell us a bit about the issue..."></textarea></div>
+            <button class="btn-submit" type="submit">Send Request</button>
+            <p class="form-note">This is a sales-demo site — form submissions aren't sent anywhere. Try the chat assistant in the bottom-right corner for a live response instead.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">❄️ Cascade Comfort HVAC</div>
+          <p style="max-width:280px;">Family-owned heating and cooling company serving the greater Charlotte area since 2009. Licensed, bonded, and insured.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">AC Repair</a></li>
+            <li><a href="#services">Furnace Installation</a></li>
+            <li><a href="#services">Maintenance Plans</a></li>
+            <li><a href="#services">Emergency Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+17045550142">(704) 555-0142</a></li>
+            <li><a href="mailto:service@cascadecomforthvac.com">service@cascadecomforthvac.com</a></li>
+            <li>Charlotte, NC</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Cascade Comfort HVAC. All rights reserved.</span>
+        <span>This is a demo website for sales &amp; QA purposes.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LeadFlow Widget -->
+  <iframe
+    id="lf-widget-frame"
+    src="https://cascade-comfort-hvac-widget.vercel.app"
+    title="LeadFlow AI Chat Assistant"
+    allow="clipboard-write"
+    loading="eager"
+  ></iframe>
+  <!-- End LeadFlow Widget -->
+
+</body>
+</html>
