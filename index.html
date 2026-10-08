@@ -383,10 +383,12 @@
     </div>
   </footer>
 
-  <!-- LeadFlow Widget -->
+  <!-- LeadFlow Widget: the production widget, tenant picked by ?tenant=<slug>.
+       The iframe is 430px wide so the widget's 390px panel + 20px gutters fit;
+       keep it in step with the #lf-widget-frame rule above. -->
   <iframe
     id="lf-widget-frame"
-    src="https://cascade-comfort-hvac-widget.vercel.app"
+    src="https://widget.vvnetworks.co.in/?tenant=cascade-comfort-hvac"
     title="LeadFlow AI Chat Assistant"
     allow="clipboard-write"
     loading="eager"
