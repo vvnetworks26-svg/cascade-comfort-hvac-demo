@@ -147,18 +147,6 @@
   .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 12.5px; }
   @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
 
-  /* ---- Widget iframe host ---- */
-  #lf-widget-frame {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    width: min(430px, calc(100vw - 20px));
-    height: min(660px, 92vh);
-    border: none;
-    background: transparent;
-    z-index: 999999;
-    color-scheme: light;
-  }
 </style>
 </head>
 <body>
@@ -383,16 +371,8 @@
     </div>
   </footer>
 
-  <!-- LeadFlow Widget: the production widget, tenant picked by ?tenant=<slug>.
-       The iframe is 430px wide so the widget's 390px panel + 20px gutters fit;
-       keep it in step with the #lf-widget-frame rule above. -->
-  <iframe
-    id="lf-widget-frame"
-    src="https://widget.vvnetworks.co.in/?tenant=cascade-comfort-hvac"
-    title="LeadFlow AI Chat Assistant"
-    allow="clipboard-write"
-    loading="eager"
-  ></iframe>
+  <!-- LeadFlow Widget -->
+  <script src="https://widget.vvnetworks.co.in/embed.js" data-tenant="reviewer-test-s-organization" async></script>
   <!-- End LeadFlow Widget -->
 
 </body>
